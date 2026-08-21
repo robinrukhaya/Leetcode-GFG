@@ -1,40 +1,53 @@
 class Solution {
 public:
-    bool dfs(int node,vector<vector<int>>& adj, vector<int>& vis, 
-            vector<int>& pathVis,vector<int>& order){
-        vis[node] = 1;
-        pathVis[node]= 1;
-
-        for (int neigh : adj[node]) {
-            if (vis[neigh] == 0) {
-                if (dfs(neigh,adj,vis,pathVis,order))
-                   return true;
-            }
-            else if (pathVis[neigh]== 1) {
-                return true;
-            }
-        }
-        pathVis[node]= 0;
-        order.push_back(node);
-        return false;
-    }
-
-
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+
+        vector<int> indegree(numCourses, 0);
         vector<vector<int>> adj(numCourses);
-        for(auto p : prerequisites) {
-            adj[p[1]].push_back(p[0]);
+
+        // Build graph and calculate indegree
+        for (auto pair : prerequisites) {
+            int course = pair[0];
+            int prerequisite = pair[1];
+
+            adj[prerequisite].push_back(course);
+            indegree[course]++;
         }
-        vector<int> vis(numCourses,0);
-        vector<int> pathVis(numCourses,0);
-        vector<int> order;
-        for(int i = 0;i<numCourses;i++) {
-            if (vis[i]== 0) {
-                if (dfs(i,adj,vis,pathVis,order))
-                    return {};
+
+        // Put courses with no prerequisites into queue
+        queue<int> q;
+
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0) {
+                q.push(i);
             }
         }
-        reverse(order.begin(),order.end());
-        return order;
+
+        vector<int> answer;
+
+        // Kahn's Algorithm
+        while (!q.empty()) {
+
+            int course = q.front();
+            q.pop();
+
+            answer.push_back(course);
+
+            for (auto neighbour : adj[course]) {
+
+                indegree[neighbour]--;
+
+                if (indegree[neighbour] == 0) {
+                    q.push(neighbour);
+                }
+            }
+        }
+
+        // Cycle exists
+        if (answer.size() != numCourses) {
+            return {};
+        }
+
+        return answer;
     }
 };
