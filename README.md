@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/robinrukhaya/Leetcode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/robinrukhaya/Leetcode/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/robinrukhaya/Leetcode/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0064-minimum-path-sum) |
@@ -239,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0044-wildcard-matching](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/robinrukhaya/Leetcode/tree/master/0045-jump-game-ii) |
+| [0053-maximum-subarray](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0064-minimum-path-sum) |
@@ -466,6 +468,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0053-maximum-subarray) |
 | [0215-kth-largest-element-in-an-array](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/robinrukhaya/Leetcode-GFG/tree/master/0973-k-closest-points-to-origin) |
